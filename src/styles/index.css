@@ -1,42 +1,6 @@
+@import "./reset.css";
 @import "./layout/stacks.css";
 @import "./components/toggle.css";
-
-*,
-::before,
-::after {
-    box-sizing: border-box;
-}
-
-html {
-    line-height: 1.5;
-    -webkit-text-size-adjust: 100%;
-    -moz-tab-size: 4;
-    -o-tab-size: 4;
-    tab-size: 4;
-    font-family:
-        "Inter Var",
-        Inter,
-        -apple-system,
-        BlinkMacSystemFont,
-        avenir next,
-        avenir,
-        segoe ui,
-        helvetica neue,
-        helvetica,
-        Cantarell,
-        Ubuntu,
-        roboto,
-        noto,
-        arial,
-        sans-serif;
-    font-feature-settings: normal;
-    font-variation-settings: normal;
-}
-
-body {
-    margin: 0;
-    line-height: inherit;
-}
 
 /* Tailwind Colors, for now */
 :root {
