@@ -1,0 +1,41 @@
+.vstack {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: calc(0.25rem * var(--spacing, 2));
+}
+
+.hstack {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: calc(0.25rem * var(--spacing, 2));
+}
+
+.spacer {
+    flex: 1;
+}
+
+.hstack:has(> .spacer) {
+    justify-content: space-between;
+}
+
+.vstack:has(> .spacer) {
+    justify-content: space-between;
+}
+
+[data-alignment="leading"],
+[data-alignment="top"] {
+    align-items: start;
+}
+
+[data-alignment="center"] {
+    align-items: center;
+}
+
+[data-alignment="trailing"],
+[data-alignment="bottom"] {
+    align-items: end;
+}

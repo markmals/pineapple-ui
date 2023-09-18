@@ -1,0 +1,17 @@
+{
+    "root": true,
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:react/recommended"
+    ],
+    "plugins": ["react-refresh"],
+    "rules": {
+        "react/react-in-jsx-scope": "off",
+        "react/jsx-sort-props": "warn",
+        "react-refresh/only-export-components": ["warn", { "allowConstantExport": true }],
+        "@typescript-eslint/triple-slash-reference": "off",
+        "@typescript-eslint/no-unused-vars": "warn"
+    },
+    "ignorePatterns": ["dist"]
+}
