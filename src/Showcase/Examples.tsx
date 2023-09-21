@@ -14,7 +14,7 @@ export function ExampleCard({ children, title }: PropsWithChildren<{ title?: str
             }}
         >
             {title && (
-                <div style={{ paddingBottom: "1rem" }}>
+                <div style={{ paddingBottom: "0.5rem" }}>
                     <h2
                         style={{
                             fontSize: "1rem",
@@ -35,7 +35,7 @@ export function ExampleCard({ children, title }: PropsWithChildren<{ title?: str
 
 export function Examples() {
     return (
-        <>
+        <div style={{ padding: "1.5rem" }}>
             <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
                 <h1
                     style={{
@@ -63,6 +63,6 @@ export function Examples() {
                 {/* TODO: Automatically import `.example.tsx` components with import.meta.glob */}
                 <ToggleSwitchExample />
             </div>
-        </>
+        </div>
     )
 }

@@ -19,6 +19,8 @@ export namespace Toggle {
 // <Toggle isOn={$isOn} style="checkbox">Wi-Fi</Toggle>
 
 export function Toggle(props: Toggle.Props) {
+    // FIXME: Make the label unclickable
+    // I might have to drop into `useSwitch` in order to do that...
     return (
         <Switch
             isSelected={props.isOn.value}

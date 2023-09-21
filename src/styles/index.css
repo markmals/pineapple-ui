@@ -2,6 +2,11 @@
 @import "./layout/stacks.css";
 @import "./components/toggle.css";
 
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+        "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
 /* Tailwind Colors, for now */
 :root {
     /* --color-inherit: inherit;
